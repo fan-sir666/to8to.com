@@ -1,0 +1,131 @@
+/* 顶部导航 */
+.top-nav {
+    border-bottom: 3px solid #00af63;
+}
+
+.top-nav-left {
+    float: left;
+}
+
+.top-nav-right {
+    float: right;
+}
+
+.top-nav a {
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-nav-left>a {
+    margin-right: 40px;
+}
+
+.top-nav-left>a:first-child span {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 18px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.top-nav-right>a {
+    margin-top: 15px;
+    color: #999999;
+}
+
+.top-nav-right>a:nth-child(2) {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #eeeeee;
+}
+
+.top-nav-right>a:nth-child(3) {
+    color: #f79c62;
+    margin-right: 258px;
+}
+
+/* 估价区域 */
+.assess {
+    height: 683px;
+    position: relative;
+}
+
+.assess>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 683px;
+}
+
+.assess .suan {
+    position: absolute;
+    top: 140px;
+    left: 242px;
+    width: 982px;
+    height: 483px;
+    background-color: #fff;
+}
+
+.assess-l {
+    float: left;
+}
+
+.assess-cen {
+    float: left;
+    position: absolute;
+
+}
+
+.assess-cen>a{
+    padding-top: 24px;
+    position: absolute;
+    top: 154px;
+    left: 470px;
+    width: 90px;
+    height: 90px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6d15;
+    border-radius: 50%;
+    z-index: 2;
+}
+.assess-cen>a i {
+    
+}
+
+.assess-cen>a::before,
+.assess-cen>a::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 134px;
+    background-color: #eeeeee;
+}
+
+.assess-cen>a::before {
+    top: -154px;
+    left: 44px;
+}
+
+.assess-cen>a::after {
+    height: 214px;
+    top: 115px;
+    left: 44px;
+}
+
+.assess-cen>img {
+    position: absolute;
+    top: 131px;
+    left: 445px;
+}
+
+.assess-y {
+    float: right;
+}
