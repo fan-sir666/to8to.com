@@ -511,7 +511,6 @@
 /* 装修公司 */
 .finish {
     height: 1010px;
-    background-color: #ccc;
 }
 
 .tab-control {
@@ -530,13 +529,24 @@
 }
 
 .tab-control li:first-child {
-    color: #24c77e;
     border-right: 1px solid #e8e8e8;
 }
 
 .tab-content-item>ul>li {
     float: left;
     margin-right: 20px;
+}
+
+.tab-content-item>ul>li:hover {
+    transition: all 0.5s;
+    width: 352px;
+    margin-top: -3px;
+    box-shadow: 4px 6px 10px #cccccc;
+}
+
+.finish-xia:hover {
+    transition: all 0.5s;
+    border: none;
 }
 
 .tab-content-item>ul>li:nth-child(4),
@@ -603,6 +613,11 @@
     height: 240px;
 }
 
+.tab-content-item>ul>li:hover>a>img {
+    transition: all 0.5s;
+    width: 352px;
+}
+
 .rating>img {
     width: 76px;
     height: 14px;
@@ -621,9 +636,22 @@
     font-size: 14px;
     color: #ff5a02;
 }
+
 .finish-2 {
     position: absolute;
     top: 267px;
+}
+
+.tab-control li.active {
+    color: #24c77e;
+}
+
+.tab-content .tab-content-item {
+    display: none;
+}
+
+.tab-content .tab-content-item.active {
+    display: block;
 }
 
 /* 底部区域 */
