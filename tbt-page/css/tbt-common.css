@@ -25,3 +25,25 @@
 .clearfix {
     *zoom: 1;
 }
+
+
+/* 页面样式 */
+
+/* 通用标题 */
+.headline {
+    height: 134px;
+    padding-top: 86px;
+    font-size: 46px;
+    text-align: center;
+    /* background-color: #ccc; */
+}
+
+.headline img {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 16px;
+}
+
+.headline span {
+    margin: 0 40px;
+}

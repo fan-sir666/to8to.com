@@ -197,6 +197,8 @@
     width: 100%;
     height: 100%;
     padding: 37px 0 41px 268px;
+    z-index: 3;
+    background-color: #fff;
 }
 
 .search-cen-x li>div {
@@ -314,12 +316,13 @@
 .search-cen-x li:nth-last-child(1) {
     padding: 0;
     position: relative;
+    background-color: transparent;
 }
 
 .search-cen-x li:nth-last-child(1) img {
     position: absolute;
     top: 0;
-    right: 320px;
+    right: 560px;
     width: 390px;
     height: 212px;
 }
@@ -376,17 +379,252 @@
     width: 34px;
     background: url(../img/sprite_1.png) -40px -186px;
 }
+
 .search-cen-x li:nth-child(4)>div:last-child a:nth-child(1)>span::after {
     background: url(../img/sprite_1.png) -128px -330px;
 }
+
 .search-cen-x li:nth-child(4)>div:last-child a:nth-child(2)>span::after {
     background: url(../img/sprite_1.png) -80px -186px;
 }
+
 .search-cen-x li:nth-child(4)>div:last-child a:nth-child(3)>span::after {
     width: 32px;
     background: url(../img/sprite_1.png) -426px -192px;
 }
 
+/* 轮播图 */
+.slider {
+    width: 100%;
+    height: 460px;
+    position: relative;
+    top: -150px;
+}
+
+.slider li {
+    position: absolute;
+    display: none;
+}
+
+.slider li img {
+    width: 100%;
+    height: 460px;
+}
+
+.slider li:first-child {
+    display: block;
+}
+
+.arrow {
+    display: none;
+}
+
+.slider:hover .arrow {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 40px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.control {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.control a {
+    float: left;
+    width: 32px;
+    height: 2px;
+    background-color: #67cdb9;
+    box-shadow: 1px 1px 5px #666;
+}
+
+.control a+a {
+    margin-left: 15px;
+}
+
+.control a.active {
+    background-color: #fff;
+}
+
+/* 业务 */
+.business {
+    padding: 20px 0;
+    height: 180px;
+    background-color: #f5f5f5;
+    margin-top: -150px;
+}
+
+.business li {
+    float: left;
+    margin-right: 15px;
+}
+
+.business li a {
+    display: block;
+}
+
+.business ul>li:last-child {
+    margin-right: 0;
+}
+
+.business ul>li img {
+    width: 276px;
+    height: 140px;
+}
+
+.business li:hover {
+    transition: all 0.5s;
+    margin-top: -2px;
+    box-shadow: 4px 8px 8px #cccccc;
+}
+
+/* 装修公司 */
+.finish {
+    height: 1010px;
+    background-color: #ccc;
+}
+
+.tab-control {
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    margin: 28px auto 70px;
+    border: 1px solid #e8e8e8;
+}
+
+.tab-control li {
+    float: left;
+    width: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+
+.tab-control li:first-child {
+    color: #24c77e;
+    border-right: 1px solid #e8e8e8;
+}
+
+.tab-content-item>ul>li {
+    float: left;
+    margin-right: 20px;
+}
+
+.tab-content-item>ul>li:nth-child(4),
+.tab-content-item>ul>li:nth-child(8) {
+    margin-right: 0;
+}
+
+.tab-content-item>ul>li:nth-child(-n+4) {
+    margin-bottom: 20px;
+}
+
+.finish-xia {
+    padding: 24px 0 0 20px;
+    height: 140px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+}
+
+.finish-xia h3 {
+    height: 20px;
+    font-size: 20px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.h-d::before,
+.h-d::after {
+    content: '礼';
+    position: absolute;
+    top: 2px;
+    right: 166px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #ff952b;
+}
+
+.h-d::after {
+    right: 134px;
+    content: '券';
+    background-color: #ff572a;
+}
+
+.finish-xia p span {
+    font-size: 16px;
+    color: #747474;
+}
+
+.finish-xia p span:first-child {
+    margin-right: 24px;
+}
+
+.tab-content-item>ul>li>a {
+    display: inline-block;
+    width: 348px;
+    height: 378px;
+}
+
+.tab-content-item li>a>img {
+    width: 348px;
+    height: 240px;
+}
+
+.rating>img {
+    width: 76px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.finish-b>a {
+    margin: 60px auto 20px;
+    display: block;
+    width: 178px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
+    color: #ff5a02;
+}
+.finish-2 {
+    position: absolute;
+    top: 267px;
+}
 
 /* 底部区域 */
 
