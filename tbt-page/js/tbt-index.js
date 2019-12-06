@@ -94,15 +94,35 @@ $('.control a').click(function() {
 });
 
 // 装修公司 tab 切换
-
-$('.finish .tab .tab-control li').click(function(){
+$('.finish .tab .finish-tab-control li').click(function(){
 	// 1.1 获取当前触发的li的索引
-	var index = $(this).index();
-	// 1.2 给当前的li添加类名active，其他兄弟li移除active类名
+    var index = $(this).index();
+    console.log(index);
 	$(this).addClass('active').siblings().removeClass('active');
-	// 1.3 根据索引找到对应的div项，添加active类名，当前这个div的其他兄弟要移除active
-	$('.finish .tab .tab-content .tab-content-item').eq(index)
+	$('.finish .tab .finish-tab-content .finish-tab-content-item').eq(index)
 	.addClass('active')
 	.siblings()
 	.removeClass('active');
 }); 
+// 装修日记 tab 切换
+$('.diary-y-tab-control li').click(function(e){
+	// 1.1 获取当前触发的li的索引
+    var index = $(this).index();
+	$('.diary-tab-content .diary-tab-content-item').eq(index)
+	.addClass('active')
+	.siblings()
+    .removeClass('active');
+    e.preventDefault();
+}); 
+
+// 看攻略
+// $('.strategy-cont-btm li').mouseover(function(){
+//     var index = $(this).index();
+//     // console.log(index);
+//     $('.strategy-cont-xiao .strategy-t').eq(index).show(500)
+// })
+// $('.strategy-cont-btm li').mouseout(function(){
+//     var index = $(this).index();
+//     // console.log(index);
+//     $('.strategy-cont-xiao .strategy-t').eq(index).hide()
+// })
