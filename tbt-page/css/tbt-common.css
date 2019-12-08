@@ -3,8 +3,6 @@
     width: 1464px;
     margin: 0 auto;
     position: relative;
-    /* 辅助 */
-    /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 * {
@@ -52,4 +50,19 @@
 .advertisement {
     height: 140px;
     padding: 40px 0;
+}
+
+/* 定义动画 */
+@keyframes jian {
+    from {
+      right: 64px;
+    }
+
+    50% {
+       right: 10px;
+    }
+
+    100% {
+      right: 64px;
+    }
 }
