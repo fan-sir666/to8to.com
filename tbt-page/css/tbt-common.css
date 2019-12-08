@@ -1,0 +1,68 @@
+/* 版心 */
+.container {
+    width: 1464px;
+    margin: 0 auto;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 页面样式 */
+
+/* 通用标题 */
+.headline {
+    height: 134px;
+    padding-top: 86px;
+    font-size: 46px;
+    text-align: center;
+    /* background-color: #ccc; */
+}
+
+.headline img {
+    width: 60px;
+    height: 3px;
+    margin-bottom: 16px;
+}
+
+.headline span {
+    margin: 0 40px;
+}
+
+/* 通用广告 */
+.advertisement {
+    height: 140px;
+    padding: 40px 0;
+}
+
+/* 定义动画 */
+@keyframes jian {
+    from {
+      right: 64px;
+    }
+
+    50% {
+       right: 10px;
+    }
+
+    100% {
+      right: 64px;
+    }
+}
