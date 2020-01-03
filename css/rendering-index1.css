@@ -945,8 +945,6 @@ aside {
     width: 100%;
 }
 /* 企业咨询 */
-
-/* 底部区域 */
 .consult-btm {
     padding: 24px 0;
 }
@@ -967,6 +965,7 @@ aside {
     color: #999999;
 }
 
+/* 底部区域 */
 footer {
     height: 202px;
     background-color: #1f1f1f;

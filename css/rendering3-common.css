@@ -1,0 +1,25 @@
+/* 版心 */
+.container {
+    width: 1464px;
+    margin: 0 auto;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
