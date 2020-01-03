@@ -489,7 +489,13 @@ aside {
 /* 案例 */
 .case,
 .group,
-.serve {
+.serve,
+.aptitude,
+.exhibition,
+.adorn,
+.evaluate,
+.diary,
+.consult {
     padding: 0 20px;
     background-color: #fff;
     margin-bottom: 35px;
@@ -582,6 +588,100 @@ aside {
     margin: 18px 0;
     font-size: 14px;
     color: #333333;
+}
+
+/* 资质 */
+.aptitude-btm {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    margin-top: 19px;
+    padding: 0 45px;
+    background-color: #fff;
+}
+
+.aptitude-btm::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 26px;
+    background: url(../img/aptitude_l.png) no-repeat;
+    background-size: contain;
+}
+
+.aptitude-btm::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 16px;
+    height: 26px;
+    background: url(../img/aptitude_y.png) no-repeat;
+    background-size: contain;
+}
+
+.aptitude-btm li {
+    float: left;
+    width: 197px;
+    margin-right: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+.aptitude-btm li:last-child {
+    margin-right: 0;
+}
+
+.aptitude-btm li img {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+/* 展示 */
+.exhibition-btm {
+    padding: 20px 0 30px;
+}
+
+.exhibition-btm li {
+    float: left;
+    margin-right: 60px;
+}
+
+.exhibition-btm li:last-child {
+    margin-right: 0;
+}
+
+.exhibition-btm li>img {
+    float: left;
+    width: 200px;
+    height: 134px;
+}
+
+.exhibition-btm li>div {
+    float: left;
+    width: 182px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.exhibition-btm li>div h3 {
+    margin-top: 22px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.exhibition-btm li>div p {
+    margin: 13px 0 23px;
+    line-height: 1.5;
+    color: #666666;
 }
 
 /* 主体侧边栏 */
@@ -705,21 +805,25 @@ aside {
     color: #999999;
     line-height: 1.5;
 }
+
 /* 服务 */
 .serve-btn {
     margin-top: 20px;
 }
-.serve-btn li{
+
+.serve-btn li {
     float: left;
     width: 138px;
     text-align: left;
     margin-right: 46px;
     margin-bottom: 30px;
 }
+
 .serve-btn li:nth-child(5),
 .serve-btn li:nth-child(10) {
     margin-right: 0;
 }
+
 .serve-btn li i {
     display: inline-block;
     position: relative;
@@ -731,6 +835,7 @@ aside {
     border-radius: 50%;
     margin-right: 16px;
 }
+
 .serve-btn li i::after {
     content: '';
     position: absolute;
@@ -743,15 +848,126 @@ aside {
     height: 12px;
     background: url(../img/gou.png) no-repeat;
 }
+
 .serve-btn li span {
     font-size: 16px;
     color: #333333;
 }
 
+.adorn .case-btm li {
+    margin-bottom: 0;
+}
+
+/* 业主评价 */
+.evaluate-btm {
+    margin-top: 38px;
+    padding-bottom: 33px;
+}
+
+.evaluate-title-l {
+    float: left;
+    margin-right: 30px;
+}
+
+.evaluate-title-l>img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+.evaluate-title-c {
+    float: left;
+}
+
+.evaluate-title-y {
+    float: right;
+}
+
+.evaluate-title-y>span {
+    color: #999999;
+}
+
+.evaluate-cen {
+    margin-top: 10px;
+    padding-left: 90px;
+}
+
+.evaluate-cen p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.evaluate-cen img {
+    margin-right: 12px;
+}
+
+.evaluate-btm-x {
+    padding-left: 90px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.evaluate-btm-x>span {
+    font-weight: 700;
+}
+
+.evaluate-btm-x>s {
+    color: #999999;
+}
+
+.evaluate-btm-x>s:nth-child(2) {
+    margin: 0 8px;
+}
+
+.evaluate-btm-x>s:nth-child(4) {
+    margin-left: 456px;
+}
+
+.evaluate-btm-x>p {
+    padding: 28px 0;
+    line-height: 2;
+    border-bottom: 1px dashed #e3e3e3;
+    margin-bottom: 27px;
+}
+
+.evaluate-btm li:last-child>.evaluate-btm-x p {
+    margin-bottom: 0;
+}
+
+/* 业主日记 */
+.diary-btm {
+    padding: 35px 0 30px;
+}
+
+.diary-btm>img {
+    width: 100%;
+}
+/* 企业咨询 */
+
 /* 底部区域 */
+.consult-btm {
+    padding: 24px 0;
+}
+.consult-btm li {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #333333;
+    border-top: 1px dashed #e8e8e8;
+}
+.consult-btm li >span:first-child {
+    float: left;
+}
+.consult-btm li >span:last-child {
+    float: right;
+    font-size: 12px;
+    color: #999999;
+}
 
 footer {
-    margin-top: 1000px;
     height: 202px;
     background-color: #1f1f1f;
     font-size: 14px;
